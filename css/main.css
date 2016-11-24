@@ -120,16 +120,19 @@ a {
 	box-shadow: 0 0 1px #3a4e61;
 }
 
+.banner .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 .rgba .banner .overlay {
-	position: absolute;
-	width: 100%;
-	height: 100%;
 	background: rgba(44, 62, 80, .8);
 }
 
 .no-rgba .banner .overlay {
 	background: rgb(44, 62, 80);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8000000,endColorstr=#C8000000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#C8000000,endcolorstr=#C8000000);
 }
 
 .overlay .arrow {
@@ -157,7 +160,7 @@ a {
 .no-rgba .overlay .arrow {
 	color: rgb(255, 255, 255);
 	background: rgb(255, 255, 255);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);    /*IE8支持*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#33000000,endcolorstr=#33000000);
 }
 
 .overlay .arrow i {
