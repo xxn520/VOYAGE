@@ -129,7 +129,7 @@ a {
 	bottom: 0;
 	width: 80px;
 	height: 80px;
-	margin: auto 0; 
+	margin: auto 0;
 }
 
 .overlay .arrow-l {
@@ -272,13 +272,11 @@ a {
 }
 
 .holidays-form .holidays-submit {
-	display: inline-block;
 	width: 107px;
 	margin-left: 25px;
+    padding: 0;
 	background: #1dd2af;
 	color: #fff;
-	line-height: 49px;
-	text-align: center;
 }
 
 .holidays-form .input-icon {
@@ -476,3 +474,145 @@ a {
 	height: 446px;
 	background: #2c3e50;
 }
+
+.footer-col {
+    display: inline-block;
+    width: 25%;
+    height: 290px;
+    vertical-align: top;
+}
+
+.footer-col h1 {
+    margin: 40px 0 10px 0;
+    font-size: 25px;
+    color: #1dd2af;
+    font-weight: 500;
+    line-height: 2.32;
+    text-align: left;
+}
+
+.footer .footer-col p {
+    padding-right: 80px;
+    font-size: 13px;
+    color: #fff;
+    line-height: 1.692;
+    text-align: left;
+}
+
+.subscribe-form {
+    margin-top: 16px;
+}
+
+.subscribe-form input {
+    box-sizing: border-box;
+    width: 149px;
+    height: 33px;
+    border: 1px solid #19242e;
+    border-radius: 3px;
+    padding: 0 20px 0 9px;
+    margin-right: 6px;
+    font-size: 15px;
+    color: #5d6e80;
+    line-height: 1.5;
+}
+
+.subscribe-form input.submit {
+    width: 49px;
+    height: 33px;
+    margin-right: 0;
+    padding: 0;
+    background: #1dd2af;
+    color: #fff;
+}
+
+.subscribe-form input::-webkit-input-placeholder {
+    font-size: 13px;
+    color: #8a8a8a;
+}
+
+.subscribe-form input::-moz-placeholder {
+    font-size: 13px;
+    color: #8a8a8a;
+}
+
+.subscribe-form input:-ms-placeholder {
+    font-size: 13px;
+    color: #8a8a8a;
+}
+
+.news-list .news-item {
+    margin: 20px 0;
+}
+
+.news-list .news-item p.date, .address p span{
+    color: #1dd2af;
+}
+
+.news-item .news-img {
+    float: left;
+    padding: 5px;
+    margin-right: 13px;
+    border: 1px solid #fff;
+}
+
+.news-item .news {
+    display: table-cell;
+    width: 9999px;
+}
+
+.news-item .news p {
+    padding-right: 0;
+}
+
+.footer-col .tags {
+    margin-right: 70px;
+}
+
+.tags .tag-btn {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 0 7px;
+    line-height: 30px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 1px;
+}
+
+.footer-col.address p {
+    padding-right: 70px;
+}
+
+.address .social-list .social-item {
+    border: none;
+}
+
+.footer hr {
+    margin: 0;
+    color: #394c5f;
+    background: #394c5f;
+}
+
+.footer p {
+    margin: 0;
+    text-align: center;
+}
+
+.footer .link {
+    padding-top: 20px;
+    font-size: 15px;
+    color: #fff;
+    line-height: 44px;
+}
+
+.footer .link .active {
+    color: #1dd2af;
+}
+
+.footer .copyright {
+    font-size: 13px;
+    color: #9dafc0;
+}
+
