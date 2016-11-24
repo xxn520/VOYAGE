@@ -12,9 +12,6 @@
         "url" : "https://github.com/xxn520/VOYAGE/issues",
         "email" : "chaochao@m2mbob.cn"
     },
-    "contributors" : [
-        {"name" : "m2mbob", "email" : "chaochao@m2mbob.cn"
-    ]
     "license": "MIT",
     "engines" : {
         "node" : ">=6.0.0"
