@@ -78,12 +78,21 @@ a {
 }
 
 .logo {
-	display: inline-block;
-	line-height: 90px;
+    display: inline-block;
 }
 
-.logo img {
-	vertical-align: middle;
+.logo h1 {
+    width: 152px;
+    margin: 30px 0;
+    height: 30px;
+}
+
+.svg .logo h1 {
+    background: url(../img/logo.svg) no-repeat;
+}
+
+.no-svg .logo h1 {
+    background: url(../img/logo.png) no-repeat;
 }
 
 .menu-list .menu-item {
@@ -622,6 +631,6 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: 0 auto;
 }
 
