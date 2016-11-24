@@ -24,7 +24,6 @@ a {
 
 .form-inline {
 	display: inline-block;
-    vertical-align: middle;
 }
 
 .clearfix:before, .clearfix:after {
@@ -248,10 +247,12 @@ a {
 }
 
 .holidays-form label {
+    display: inline-block;
 	padding: 0 24px 0 31px;
 	font-size: 22px;
 	color: #9fb0c0;
-	line-height: 1.364;
+	line-height: 49px;
+    height: 49px;
 	vertical-align: middle;
 }
 
@@ -263,7 +264,8 @@ a {
 	padding: 0 48px 0 11px;
 	font-size: 20px;
 	color: #5d6e80;
-	line-height: 1.5;
+	line-height: 49px;
+    vertical-align: middle;
 }
 
 .holidays-form input::-webkit-input-placeholder {
@@ -524,7 +526,8 @@ a {
     margin-right: 6px;
     font-size: 15px;
     color: #5d6e80;
-    line-height: 1.5;
+    line-height: 33px;
+    vertical-align: middle;
 }
 
 .subscribe-form input.submit {
