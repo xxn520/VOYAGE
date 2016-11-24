@@ -131,7 +131,6 @@ a {
 }
 
 .no-rgba .banner .overlay {
-	background: rgb(44, 62, 80);
 	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#C8000000,endcolorstr=#C8000000);
 }
 
@@ -158,8 +157,6 @@ a {
 }
 
 .no-rgba .overlay .arrow {
-	color: rgb(255, 255, 255);
-	background: rgb(255, 255, 255);
 	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#33000000,endcolorstr=#33000000);
 }
 
