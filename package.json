@@ -1,29 +1,30 @@
 {
-    "name": "voyage",
-    "version": "1.0.0",
-    "description": "psd to html",
-    "main": "index.js",
-    "author": "m2mbob",
-    "respository" : {
-        "type" :"git",
-        "url" :"https://github.com/xxn520/VOYAGE"
-    },
-    "bugs" : {
-        "url" : "https://github.com/xxn520/VOYAGE/issues",
-        "email" : "chaochao@m2mbob.cn"
-    },
-    "license": "MIT",
-    "engines" : {
-        "node" : ">=6.0.0"
-    },
-    "devDependencies": {
-        "browser-sync": "^2.18.2",
-        "del": "^2.2.2",
-        "gulp": "^3.9.1",
-        "gulp-autoprefixer": "^3.1.1",
-        "gulp-htmlmin": "^3.0.0",
-        "gulp-minify-css": "^1.2.4",
-        "gulp-rename": "^1.2.2",
-        "gulp-uglify": "^2.0.0"
-    }
+  "name": "voyage",
+  "version": "1.0.0",
+  "description": "psd to html",
+  "main": "index.js",
+  "author": "m2mbob",
+  "respository": {
+    "type": "git",
+    "url": "https://github.com/xxn520/VOYAGE"
+  },
+  "bugs": {
+    "url": "https://github.com/xxn520/VOYAGE/issues",
+    "email": "chaochao@m2mbob.cn"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.0.0"
+  }
 }
