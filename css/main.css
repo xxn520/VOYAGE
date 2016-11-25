@@ -41,8 +41,10 @@ a {
 
 /*header*/
 .header .topbar {
+    position:relative;
 	background: #2c3e50;
 	box-shadow: 0 0 1px #e0dfdf;
+    behavior: url(vendor/PIE.htc);
 }
 
 .login-list, .social-list, .menu-list {
@@ -74,7 +76,9 @@ a {
 }
 
 .header .nav {
+    position:relative;
 	box-shadow: 0 0 4px #bfbfbf;
+    behavior: url(vendor/PIE.htc);
 }
 
 .logo {
@@ -118,6 +122,7 @@ a {
 	height: 697px;
 	background: url(../img/banner.jpg) no-repeat center center;
 	box-shadow: 0 0 1px #3a4e61;
+    behavior: url(vendor/PIE.htc);
 }
 
 .banner .overlay {
@@ -202,6 +207,7 @@ a {
 }
 
 .banner-btn {
+    position:relative;
 	display: inline-block;
 	margin: 50px 0 30px;
 	padding: 20px;
@@ -211,6 +217,7 @@ a {
 	background: transparent;
 	border: 2px solid #fff;
 	border-radius: 4px;
+    behavior: url(vendor/PIE.htc);
 }
 
 .banner-btn:hover {
@@ -517,6 +524,7 @@ a {
 }
 
 .subscribe-form input {
+    position:relative;
     box-sizing: border-box;
     width: 149px;
     height: 33px;
@@ -528,6 +536,7 @@ a {
     color: #5d6e80;
     line-height: 33px;
     vertical-align: middle;
+    behavior: url(vendor/PIE.htc);
 }
 
 .subscribe-form input.submit {
@@ -583,6 +592,7 @@ a {
 }
 
 .tags .tag-btn {
+    position:relative;
     display: inline-block;
     margin-bottom: 5px;
     padding: 0 7px;
@@ -593,6 +603,7 @@ a {
     background: transparent;
     border: 1px solid #fff;
     border-radius: 1px;
+    behavior: url(vendor/PIE.htc);
 }
 
 .footer-col.address p {
