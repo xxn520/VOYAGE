@@ -35,4 +35,4 @@ gulp
 ### TODO
 
 - [x] 提高兼容性，兼容 IE 8+
-- [ ] 加入 sass 或 less 等预处理器
+- [x] 加入 sass 或 less 等预处理器（最后选了 Stylus）

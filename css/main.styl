@@ -9,6 +9,7 @@ $def-tbh = 40px
 $def-navh = 90px
 $def-bnh = 697px
 
+
 /*mixins and func*/
 center(v = false, h = false)
   if h and v
@@ -126,9 +127,9 @@ a
         menuitem()
         &:last-child
           padding-right 2px
-        & a
+        a
           color #5d6e80
-        & .active
+        .active
             color $def-ac
 
 .svg
@@ -147,7 +148,7 @@ a
   height 697px
   background url(../img/banner.jpg) no-repeat center center
   box-shadow 0 0 1px #3a4e61
-  .overlay
+  /.overlay
     position absolute
     width 100%
     height 100%
@@ -158,7 +159,7 @@ a
       width 80px
       height 80px
       center(true, false)
-      &:hover
+      ^[0] &:hover
         color #fff
         background $def-ac
       i
@@ -171,7 +172,7 @@ a
       left 0
     .arrow-r
       right 0
-    .banner-text
+    /.banner-text
       position absolute
       width 736px
       height 260px
@@ -193,7 +194,7 @@ a
         font-size 25px
         line-height 1.2
         color #fff
-    .banner-btn
+    /.banner-btn
       display inline-block
       margin 50px 0 30px
       padding 20px
@@ -278,3 +279,245 @@ a
       margin-left -48px
       line-height 104px
       color #a4a4a4
+
+/*content*/
+.content
+  text-align center
+  h1
+    padding 86px 0 16px
+    font-size 25px
+    color #2c3e50
+    text-transform uppercase
+    line-height 1.2
+  p
+    font-size 16px
+    color #626262
+    line-height 1.563
+  .card-box
+    width $def-width
+    margin 0 auto 150px
+    /.card-list
+      margin-top 40px
+      margin-right -15px
+      overflow hidden
+      .card-item
+        display inline-block
+        margin-right 15px
+        background #eee
+        border 5px solid #eee
+        img
+          display block
+          width 268px
+        p
+          padding 10px 0
+          margin 0
+          span
+            display inline-block
+            width 200px
+            padding 0 14px
+            font-size 16px
+            color #626262
+            line-height 1.2
+            text-align left
+        &:hover
+          background $def-ac
+          border 5px solid $def-ac
+          p
+            background #2c3e50
+            color #fff
+            span
+              color #fff
+
+  /.holiday-types
+    height 518px
+    background url(../img/holiday-types.jpg) no-repeat
+    h1
+      padding-top 80px
+      color #fff
+    p
+      color #9eafc0
+    /.types-list
+      margin 68px 0 0
+      .types-item
+        display inline-block
+        margin 0 18px
+        img
+          display block
+        span
+          display block
+          text-align center
+          font-size 20px
+          line-height 58px
+          color #9dafc0
+          &.active
+            color $def-ac
+
+  /.testimo
+    height 462px
+    h1
+      padding-top 80px
+      margin 0
+    /.popover
+      position relative
+      display inline-block
+      box-sizing border-box
+      width 475px
+      height 142px
+      margin-right 11px
+      text-align left
+      border 1px solid #dedede
+      &:before
+        display block
+        content ''
+        height 4px
+        background $def-ac
+      p
+        margin 0
+        padding 0 26px
+      .p-info
+        font-size 15px
+        color #4d4d4d
+        line-height 1.4
+        margin-top 10px
+      .p-name
+        font-size 18px
+        color $def-ac
+        line-height 1.4
+      .p-city
+        font-size 13px
+        line-height 1.9
+        color #b2b2b2
+      .arrow
+        position absolute
+        right 88px
+        bottom -38px
+        content ''
+        width 0
+        height 0
+        border solid
+        border-width 38px 36px 0 11px
+        border-color #dedede transparent transparent transparent
+        &:after
+          position absolute
+          top -38px
+          left -10px
+          content ''
+          width 0
+          height 0
+          border solid
+          border-width 36px 35px 0 10px
+          border-color #fff transparent transparent transparent
+
+/*footer*/
+.footer
+  position relative
+  height 446px
+  background #2c3e50
+  .footer-col
+    display inline-block
+    width 25%
+    height 290px
+    vertical-align top
+    h1
+      margin 40px 0 10px 0
+      font-size 25px
+      color $def-ac
+      font-weight 500
+      line-height 2.32
+      text-align left
+    p
+      padding-right 80px
+      font-size 13px
+      color #fff
+      line-height 1.692
+      text-align left
+    /.subscribe-form
+      margin-top 16px
+      input
+        box-sizing border-box
+        width 149px
+        height 33px
+        border 1px solid #19242e
+        border-radius 3px
+        padding 0 20px 0 9px
+        margin-right 6px
+        font-size 15px
+        color #5d6e80
+        line-height 33px
+        vertical-align middle
+        &::-webkit-input-placeholder
+        &::-moz-placeholder
+        &:-ms-placeholder
+          font-size 13px
+          color #8a8a8a
+      input.submit
+        width 49px
+        height 33px
+        margin-right 0
+        padding 0
+        background #1dd2af
+        color #fff
+    /.news-list
+      .news-item
+        margin 20px 0
+        p.date,
+        p span
+          color $def-ac
+        .news-img
+          float left
+          padding 5px
+          margin-right 13px
+          border 1px solid #fff
+        .news
+          display table-cell
+          width 9999px
+        p
+          text-align left
+          padding-right 0
+    .tags
+      margin-right 70px
+      .tag-btn
+        display inline-block
+        margin-bottom 5px
+        padding 0 7px
+        line-height 30px
+        font-size 13px
+        color #fff
+        text-align center
+        background transparent
+        border 1px solid #fff
+        border-radius 1px
+    &.address
+      p
+        padding-right 70px
+      .social-list
+        .social-item
+          border: none;
+  hr
+    margin 0
+    color #394c5f
+    background #394c5f
+  p
+    margin 0
+    text-align center
+  .link
+    padding-top 20px
+    font-size 15px
+    color #fff
+    line-height 44px
+    & .active
+      color $def-ac
+  .copyright
+    font-size 13px
+    color #9dafc0
+  .go-top
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    margin 0 auto
+
+.no-borderradius
+  .subscribe-form input,
+  .tags .tag-btn
+    PIE()
