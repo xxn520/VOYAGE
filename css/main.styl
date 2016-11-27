@@ -1,0 +1,280 @@
+/*constants*/
+$body-width = 1173px
+$def-fs = 15px
+$def-lh = 1.4
+$def-ff = -apple-system, "Helvetica Neue", Arial, "PingFang SC", "lucida grande", "lucida sans unicode", lucida, helvetica, "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+$def-bg = #2c3e50
+$def-ac = #1dd2af
+$def-tbh = 40px
+$def-navh = 90px
+$def-bnh = 697px
+
+/*mixins and func*/
+center(v = false, h = false)
+  if h and v
+    margin auto
+  else if v
+    margin auto 0
+  else if h
+    margin 0 auto
+  else
+    margin v h
+
+list()
+  display inline-block
+
+item()
+  display inline-block
+
+tbitem()
+  item()
+  padding 0 14px
+  line-height $def-tbh
+  border-left 1px solid #374d63
+  border-right 1px solid #17202a
+
+menuitem()
+  item()
+  padding 0 19px
+  line-height $def-navh
+
+cw()
+  color #fff
+
+PIE()
+  position relative
+  behavior url(assets/css/vendor/PIE.htc)
+
+/*common*/
+body
+  min-width $body-width
+  font $def-fs/$def-lh $def-ff
+  word-wrap break-word
+  background-color #fff
+
+.container
+  width $body-width
+  center(false, true)
+
+ul
+  margin 0
+  padding 0
+  list-style none
+
+a
+  text-decoration none
+
+.form-inline
+  display inline-block
+
+.clearfix
+  *zoom 1
+  &:before
+  &:after
+    content ''
+    display table
+  &:after
+    clear both
+
+/*topbar*/
+.no-boxshadow
+  .header
+    .topbar
+    .nav
+    .banner
+      PIE()
+
+.header
+  .topbar
+    background $def-bg
+    box-shadow 0 0 1px #e0dfdf
+
+    /.login-list
+      list()
+      .login-item
+        tbitem()
+        &:first-child
+          padding-left 2px
+          border-left none
+        .register
+          color $def-ac
+        a
+        i
+          cw()
+
+    /.social-list
+      list()
+      .social-item
+        tbitem()
+        a
+          cw()
+
+/*nav*/
+.header
+  .nav
+    background #fff
+    box-shadow 0 0 4px #bfbfbf
+    /.logo
+    display inline-block
+      h1
+        width 152px
+        height 30px
+        margin 30px 0
+    /.menu-list
+      list()
+      .menu-item
+        menuitem()
+        &:last-child
+          padding-right 2px
+        & a
+          color #5d6e80
+        & .active
+            color $def-ac
+
+.svg
+  .logo
+    h1
+      background url(../img/logo.svg) no-repeat
+
+.no-svg
+  .logo
+    h1
+      background url(../img/logo.png) no-repeat
+
+/*banner*/
+.banner
+  position relative
+  height 697px
+  background url(../img/banner.jpg) no-repeat center center
+  box-shadow 0 0 1px #3a4e61
+  .overlay
+    position absolute
+    width 100%
+    height 100%
+    .arrow
+      position absolute
+      top 0
+      bottom 0
+      width 80px
+      height 80px
+      center(true, false)
+      &:hover
+        color #fff
+        background $def-ac
+      i
+        position absolute
+        top 10px
+        left 0
+        right 0
+        text-align center
+    .arrow-l
+      left 0
+    .arrow-r
+      right 0
+    .banner-text
+      position absolute
+      width 736px
+      height 260px
+      left 0
+      right 0
+      top 0
+      bottom 0
+      center(true, true)
+      text-align center
+      h1
+        margin 0
+        font-size 50px
+        line-height 1.5
+        font-weight bold
+        text-transform uppercase
+        color #fff
+      p
+        margin 0
+        font-size 25px
+        line-height 1.2
+        color #fff
+    .banner-btn
+      display inline-block
+      margin 50px 0 30px
+      padding 20px
+      font-size 20px
+      color #fff
+      text-align center
+      background transparent
+      border 2px solid #fff
+      border-radius 4px
+      &:hover
+        border 2px solid $def-ac
+        background $def-ac
+.rgba
+  .overlay
+    background rgba(44, 62, 80, .8)
+    .arrow
+      color rgba(255, 255, 255, .2)
+      background-color rgba(255, 255, 255, .2)
+
+.no-rgba
+  .overlay
+    filter unquote('progid:DXImageTransform.Microsoft.gradient(startcolorstr=#C8000000,endcolorstr=#C8000000)')
+    .arrow
+      filter unquote('progid:DXImageTransform.Microsoft.gradient(startcolorstr=#33000000,endcolorstr=#33000000)')
+
+.no-borderradius
+  .banner-btn
+    PIE()
+
+.holidays-pack
+  line-height 104px
+  background $def-bg
+  p
+    display inline-block
+    padding-right 36px
+    font-size 20px
+    font-weight 300
+    line-height 1.2
+    vertical-align middle
+    color #9fb0c0
+    span
+      font-weight 500
+      color #fff
+  .arrow-col
+    display inline-block
+    width 8px
+    height 104px;
+    background url(../img/arrow-col.jpg)
+    vertical-align middle
+  .holidays-form
+    label
+      display inline-block
+      padding 0 24px 0 31px
+      font-size 22px
+      color #9fb0c0
+      line-height 49px
+      height 49px
+      vertical-align middle
+    input
+      box-sizing border-box
+      width 326px
+      height 49px
+      border 1px solid #19242e
+      padding 0 48px 0 11px
+      font-size 20px
+      color #5d6e80
+      line-height 49px
+      vertical-align middle
+      &::-webkit-input-placeholder
+      &::-moz-placeholder
+      &:-ms-placeholder
+        font-size 20px
+        color #8a8a8a
+    .holidays-submit
+      width 107px
+      margin-left 25px
+      padding 0
+      background $def-ac
+      color #fff
+    .input-icon
+      position absolute
+      margin-left -48px
+      line-height 104px
+      color #a4a4a4
